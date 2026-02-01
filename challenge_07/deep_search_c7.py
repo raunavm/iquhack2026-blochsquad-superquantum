@@ -83,5 +83,5 @@ if total_t < 300:
     for g in final_seqs[1]: getattr(qc, g)(0)
     
     import qiskit.qasm2
-    qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_efficient.qasm")
+    qiskit.qasm2.dump(qc, "./solution_challenge_7_efficient.qasm")
     print("Saved efficient solution.")

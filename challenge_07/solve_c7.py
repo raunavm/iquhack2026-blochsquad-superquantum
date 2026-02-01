@@ -45,7 +45,7 @@ for depth in [1, 2]:
     print(f"State Fidelity: {fid}")
     print(f"State Infidelity: {1-fid}")
     
-    filename = f"/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_sk_d{depth}.qasm"
+    filename = f"./solution_challenge_7_sk_d{depth}.qasm"
     qiskit.qasm2.dump(qc_basis, filename)
 
 best_fid_t0 = 0
@@ -63,4 +63,4 @@ for i in range(5000):
 
 print(f"Best T=0 Fidelity: {best_fid_t0}")
 qc_t0_trans = transpile(best_qc_t0, basis_gates=['h', 's', 'sdg', 'cx'])
-qiskit.qasm2.dump(qc_t0_trans, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_t0.qasm")
+qiskit.qasm2.dump(qc_t0_trans, "./solution_challenge_7_t0.qasm")

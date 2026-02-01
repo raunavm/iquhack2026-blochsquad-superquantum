@@ -64,7 +64,7 @@ if ond_qft < 1e-9 or aligned_ond(U_target, qft_swap) < 1e-9:
                  print("Circuit matches with SWAP.")
 
     
-    qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_8_exact.qasm")
+    qiskit.qasm2.dump(qc, "./solution_challenge_8_exact.qasm")
 
 else:
     print("Does not match standard QFT immediately.")

@@ -42,4 +42,4 @@ M_target = np.array([
 ond = aligned_ond(M_target, Operator(qc_trans).data)
 t_count = qc_trans.count_ops().get('t', 0) + qc_trans.count_ops().get('tdg', 0)
 print(f"Auto Solution T={t_count}, OND={ond}")
-qiskit.qasm2.dump(qc_trans, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+qiskit.qasm2.dump(qc_trans, "./solution_challenge_9.qasm")

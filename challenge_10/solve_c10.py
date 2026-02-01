@@ -77,4 +77,4 @@ def aligned_ond(U, V):
 ond = aligned_ond(U_target, Operator(qc_approx_full).data)
 print(f"Result: T={t_count}, OND={ond}")
 
-qiskit.qasm2.dump(qc_approx_full, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_10_approx.qasm")
+qiskit.qasm2.dump(qc_approx_full, "./solution_challenge_10_approx.qasm")

@@ -30,4 +30,4 @@ for depth in [1, 2]:
     print(f"T Count: {t_count}")
     
     
-    qiskit.qasm2.dump(full, f"/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_3_sk_d{depth}.qasm")
+    qiskit.qasm2.dump(full, f"./solution_challenge_3_sk_d{depth}.qasm")

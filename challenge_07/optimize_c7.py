@@ -4,7 +4,7 @@ import numpy as np
 from qiskit.transpiler import PassManager
 from qiskit.transpiler.passes import CommutativeCancellation, Optimize1qGatesDecomposition
 
-qc = qiskit.qasm2.load("/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_sk_d1.qasm")
+qc = qiskit.qasm2.load("./solution_challenge_7_sk_d1.qasm")
 print(f"Original T Count: {qc.count_ops().get('t', 0) + qc.count_ops().get('tdg', 0)}")
 
 pm = PassManager([CommutativeCancellation(), Optimize1qGatesDecomposition()])
@@ -15,7 +15,7 @@ qc_trans = transpile(qc_opt, basis_gates=['h', 's', 'sdg', 't', 'tdg', 'cx'], op
 t_count = qc_trans.count_ops().get('t', 0) + qc_trans.count_ops().get('tdg', 0)
 print(f"Qiskit Opt T Count: {t_count}")
 
-qiskit.qasm2.dump(qc_trans, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_opt.qasm")
+qiskit.qasm2.dump(qc_trans, "./solution_challenge_7_opt.qasm")
 
 
 

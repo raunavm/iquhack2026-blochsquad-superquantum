@@ -39,4 +39,4 @@ pass
 pass
 
 
-qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_c9_analysis.qasm")
+qiskit.qasm2.dump(qc, "./solution_c9_analysis.qasm")

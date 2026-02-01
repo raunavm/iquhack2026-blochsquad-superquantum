@@ -30,7 +30,7 @@ ond = aligned_ond(M_target, Operator(qc).data)
 print(f"T=0 Solution OND: {ond}")
 
 if ond < 0.1:
-    qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+    qiskit.qasm2.dump(qc, "./solution_challenge_9.qasm")
     print("Saved T=0 Solution!")
 else:
     print("Solution Failed OND check (maybe phase issue?).")

@@ -96,4 +96,4 @@ final_t = ops.get('t', 0) + ops.get('tdg', 0)
 print(f"Final T-count: {final_t}")
 print(f"Final ops: {ops}")
 
-qiskit.qasm2.dump(qc_trans, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_11.qasm")
+qiskit.qasm2.dump(qc_trans, "./solution_challenge_11.qasm")

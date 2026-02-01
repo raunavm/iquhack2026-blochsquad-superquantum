@@ -32,6 +32,6 @@ print(f"Fallback Solution: T={t_count}, OND={ond}")
 
 if ond < 0.1:
     print("VALID. Saving.")
-    qiskit.qasm2.dump(qc_t, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_10.qasm")
+    qiskit.qasm2.dump(qc_t, "./solution_challenge_10.qasm")
 else:
     print("Warning: Fallback invalid?")

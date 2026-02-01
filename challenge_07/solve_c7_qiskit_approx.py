@@ -46,4 +46,4 @@ for instr in qc_exact.data:
 t_count = qc_approx.count_ops().get('t', 0) + qc_approx.count_ops().get('tdg', 0)
 print(f"Approximated T Count: {t_count}")
 
-qiskit.qasm2.dump(qc_approx, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_7_qiskit_approx.qasm")
+qiskit.qasm2.dump(qc_approx, "./solution_challenge_7_qiskit_approx.qasm")

@@ -136,4 +136,4 @@ print(f"FINAL: T={t_final}, OND={ond_final}")
 
 if ond_final < 0.1 and t_final < 630:
     print("SUCCESS: Valid and Efficient!")
-    qiskit.qasm2.dump(qc_full, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_10.qasm")
+    qiskit.qasm2.dump(qc_full, "./solution_challenge_10.qasm")

@@ -40,4 +40,4 @@ t_count = qc.count_ops().get('t', 0) + qc.count_ops().get('tdg', 0)
 print(f"T Count: {t_count}")
 
 if ond < 1e-6:
-    qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+    qiskit.qasm2.dump(qc, "./solution_challenge_9.qasm")

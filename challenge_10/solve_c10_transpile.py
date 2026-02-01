@@ -78,6 +78,6 @@ if best_qc:
     t_final = best_qc.count_ops().get('t', 0) + best_qc.count_ops().get('tdg', 0)
     print(f"FINAL: T={t_final}, OND={ond_final}")
     
-    qiskit.qasm2.dump(best_qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_10.qasm")
+    qiskit.qasm2.dump(best_qc, "./solution_challenge_10.qasm")
 else:
     print("No solution found.")

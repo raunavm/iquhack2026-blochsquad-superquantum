@@ -136,4 +136,4 @@ ond = aligned_ond_full(U_target, Operator(qc_approx_full).data)
 t_count = qc_approx_full.count_ops().get('t', 0) + qc_approx_full.count_ops().get('tdg', 0)
 print(f"Approximated Solution T={t_count}, OND={ond}")
 if ond < 0.1:
-    qiskit.qasm2.dump(qc_approx_full, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_10.qasm")
+    qiskit.qasm2.dump(qc_approx_full, "./solution_challenge_10.qasm")

@@ -57,7 +57,7 @@ for i in range(200000):
         qc.cx(0, 1)
         
         
-        filename = f"/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_3_better.qasm"
+        filename = f"./solution_challenge_3_better.qasm"
         qiskit.qasm2.dump(qc, filename)
         
         best_ond = ond

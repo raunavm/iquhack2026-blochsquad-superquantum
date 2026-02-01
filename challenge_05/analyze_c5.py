@@ -45,7 +45,7 @@ if ond_swap < 1e-9:
     qc2.cx(1, 0)
     qc2.cx(0, 1)
     
-    qiskit.qasm2.dump(qc2, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_5_swap.qasm")
+    qiskit.qasm2.dump(qc2, "./solution_challenge_5_swap.qasm")
     t_count = qc2.count_ops().get('t', 0) + qc2.count_ops().get('tdg', 0)
     print(f"Saved T=0 Solution. T-Count: {t_count}")
 

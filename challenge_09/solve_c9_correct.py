@@ -97,4 +97,4 @@ if ond > 0.1:
     
     t_count = qc_final.count_ops().get('t', 0) + qc_final.count_ops().get('tdg', 0)
     print(f"Final Count T={t_count}")
-    qiskit.qasm2.dump(qc_final, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+    qiskit.qasm2.dump(qc_final, "./solution_challenge_9.qasm")

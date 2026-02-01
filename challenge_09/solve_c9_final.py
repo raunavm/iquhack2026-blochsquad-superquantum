@@ -50,4 +50,4 @@ M_target = np.array([
 final_ond = aligned_ond(M_target, Operator(qc).data)
 t_count = qc.count_ops().get('t', 0) + qc.count_ops().get('tdg', 0)
 print(f"Final Solution T={t_count}, OND={final_ond}")
-qiskit.qasm2.dump(qc, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+qiskit.qasm2.dump(qc, "./solution_challenge_9.qasm")

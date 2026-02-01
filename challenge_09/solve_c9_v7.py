@@ -88,8 +88,8 @@ ond2 = aligned_ond(M_target, Operator(qc2).data)
 print(f"Invert CH (-pi/4 first): OND={ond2}")
 
 if ond1 < 0.4:
-    qiskit.qasm2.dump(qc1, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+    qiskit.qasm2.dump(qc1, "./solution_challenge_9.qasm")
 elif ond2 < 0.4:
-    qiskit.qasm2.dump(qc2, "/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_9.qasm")
+    qiskit.qasm2.dump(qc2, "./solution_challenge_9.qasm")
 else:
     print("Both failed.")

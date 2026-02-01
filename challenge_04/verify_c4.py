@@ -22,11 +22,11 @@ H1 = XX + YY
 eig, vec = np.linalg.eigh(H1)
 U_target = vec @ np.diag(np.exp(1j * theta * eig)) @ vec.conj().T
 
-qc2 = qiskit.qasm2.load("/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_4_t2.qasm")
+qc2 = qiskit.qasm2.load("./solution_challenge_4_t2.qasm")
 ond2 = aligned_ond(U_target, Operator(qc2).data)
 print(f"T=2 Solution OND: {ond2}")
 
-qc_hf = qiskit.qasm2.load("/Users/raunavmendiratta/Desktop/iQuHack/solution_challenge_4_high_fidelity.qasm")
+qc_hf = qiskit.qasm2.load("./solution_challenge_4_high_fidelity.qasm")
 ond_hf = aligned_ond(U_target, Operator(qc_hf).data)
 t_hf = qc_hf.count_ops().get('t', 0) + qc_hf.count_ops().get('tdg', 0)
 print(f"High Fidelity (T={t_hf}) OND: {ond_hf}")
