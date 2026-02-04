@@ -1,7 +1,6 @@
 # iQuHack 2026 - Superquantum Challenge
 
 **Team**: Blochsquad  
-**Author**: Raunav Mendiratta  
 **Challenge**: Clifford+T Circuit Compilation
 
 ## Overview
